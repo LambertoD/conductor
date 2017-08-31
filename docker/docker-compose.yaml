@@ -11,8 +11,8 @@ services:
     ports:
       - 8080:8080
     links:
-      - elasticsearch:es
-      - dynomite:dyno1
+      - "elasticsearch:es"
+      - "dynomite:dyno1"
 
   conductor-ui:
     environment:
